@@ -1,0 +1,14 @@
+version: '3.9'
+services:
+  apache:
+    build: .
+    restart: unless-stopped
+    container_name: na-kavkaz
+    ports:
+      - '20080:80'
+    volumes:
+      - ./:/var/www/html/
+
+
+
+
